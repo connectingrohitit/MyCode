@@ -2,6 +2,8 @@ import pytest
 from selenium import webdriver
 
 driver = None
+
+
 @pytest.fixture(scope='module')
 def init_driver():
     global driver
@@ -14,9 +16,11 @@ def init_driver():
     print("----------------- Setup--------------------")
     driver.quit()
 
+
 @pytest.mark.usefixtures("inti_driver")
 def test_title():
     assert driver.title == 'Google'
+
 
 @pytest.mark.usefixtures("inti_driver")
 def test_url():
