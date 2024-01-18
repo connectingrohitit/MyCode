@@ -1,5 +1,6 @@
 import pytest
 
+
 @pytest.mark.add
 def test_add():
     a = 2
@@ -7,9 +8,18 @@ def test_add():
     c = 5
     temp = a + b
     assert c == temp
+
+
 @pytest.mark.demo
 def test_demo1():
     assert True
+
+
 @pytest.mark.qa
 def test_QA():
     assert False
+
+
+@pytest.mark.xfail
+def test_xfail():
+    pass

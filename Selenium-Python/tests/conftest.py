@@ -4,6 +4,7 @@ import pytest
 
 @pytest.fixture(params=['chrome', 'ff'], scope='class')
 def init_driver(request):
+    global w_driver
     if request.param == 'chrome':
         w_driver = webdriver.Chrome()
     if request.param == 'ff':
