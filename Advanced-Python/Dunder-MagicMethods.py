@@ -1,3 +1,7 @@
+# Methods that start with 'Double Underscore' are called 'Dunder' or 'Magic Methods' in python
+# These methods are internal methods and can be accessed/seen using dir(<object>/class) command e.g. dir(datetime)
+
+
 import time
 from datetime import datetime
 
