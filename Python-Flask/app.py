@@ -3,7 +3,7 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 items = 'Test'
-client = MongoClient("mongodb+srv://connectingrohitit:vR13CVcJRK6NKZvQ@mymongodbcluster.k2voe0x.mongodb.net/")
+client = MongoClient("Connection String")
 db = client["TestDB"]
 coll = db["MyDBCollection"]
 data1 = coll.find_one()
